@@ -21,9 +21,9 @@ export function Hero() {
                 Smart Technology for{" "}
                 <span className="text-blue-600">Large Properties</span>
               </h1>
-              <p className="text-xl text-gray-600 max-w-lg">
-                Professional installation and consulting for mesh WiFi, security cameras, 
-                and smart home systems on estates and rural homesteads.
+              <p className="text-xl text-gray-600 mb-8 max-w-3xl">
+                Professional installation and consulting for distributed WiFi systems, security cameras,
+                and smart home systems on estates and rural homesteads across North Central Texas.
               </p>
             </div>
 
@@ -41,9 +41,8 @@ export function Hero() {
 
             {/* Trust Indicators */}
             <div className="flex items-center space-x-6 text-sm text-gray-600">
-              <div className="flex items-center space-x-2">
-                <Wifi className="w-4 h-4 text-green-500" />
-                <span>Mesh WiFi Systems</span>
+              <div className="flex items-center space-x-2 text-sm text-gray-600">
+                <span>Distributed WiFi Systems</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Shield className="w-4 h-4 text-blue-500" />

@@ -14,24 +14,25 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "AcreLink - Smart Technology for Large Properties",
-  description: "Professional installation and consulting for mesh WiFi, security cameras, and smart home systems on estates and rural homesteads in North Central Texas.",
+  description: "Professional installation and consulting for distributed WiFi systems, security cameras, and smart home systems on estates and rural homesteads in North Central Texas.",
   icons: {
     icon: [
+      { url: "/favicon.ico", sizes: "any" },
       { url: "/acrelink logo.svg", type: "image/svg+xml" },
-      { url: "/favicon.ico" }
     ],
+    shortcut: "/favicon.ico",
     apple: "/acrelink logo.png",
   },
   openGraph: {
     title: "AcreLink - Smart Technology for Large Properties",
-    description: "Professional installation and consulting for mesh WiFi, security cameras, and smart home systems on estates and rural homesteads in North Central Texas.",
+    description: "Professional installation and consulting for distributed WiFi systems, security cameras, and smart home systems on estates and rural homesteads in North Central Texas.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "AcreLink - Smart Technology for Large Properties",
-    description: "Professional installation and consulting for mesh WiFi, security cameras, and smart home systems on estates and rural homesteads in North Central Texas.",
+    description: "Professional installation and consulting for distributed WiFi systems, security cameras, and smart home systems on estates and rural homesteads in North Central Texas.",
   },
 };
 

@@ -6,15 +6,14 @@ import { CheckCircle, Wifi, Shield, Home, Settings, Zap, Users } from "lucide-re
 const detailedServices = [
   {
     icon: Wifi,
-    title: "Mesh WiFi Systems",
-    description: "Enterprise-grade mesh networking solutions designed for large properties and rural areas.",
+    title: "Distributed WiFi Systems",
+    description: "Enterprise-grade WiFi networking solutions designed for large properties and rural areas.",
     features: [
-      "Multi-point coverage across entire properties",
-      "Outdoor access points for barns and outbuildings",
-      "Seamless roaming between access points",
-      "Advanced band steering and load balancing",
-      "Professional installation and configuration",
-      "Ongoing monitoring and optimization"
+      "Coverage across large acreage and multiple buildings",
+      "Outdoor access points for barns and fields",
+      "Seamless roaming between coverage areas",
+      "High-speed internet access throughout property",
+      "Professional installation and configuration"
     ]
   },
   {

@@ -31,13 +31,10 @@ const projects = [
     size: "Full property coverage"
   },
   {
-    title: "Ranch Mesh Internet",
-    type: "Network Infrastructure",
-    description: "Enterprise-grade mesh WiFi system covering entire ranch properties, barns, and outdoor areas. Seamless connectivity across large acreage.",
-    features: ["Multi-point coverage", "Outdoor access points", "Seamless roaming", "Band steering", "Remote management", "High-speed connectivity"],
-    image: "/api/placeholder/400/300",
-    date: "2024",
-    size: "Large acreage"
+    title: "Ranch Distributed Internet",
+    type: "WiFi & Internet",
+    description: "Enterprise-grade distributed WiFi system covering entire ranch properties, barns, and outdoor areas. Seamless connectivity across large acreage.",
+    features: ["Property-wide coverage", "Outdoor access points", "Seamless roaming", "High-speed connectivity"]
   },
   {
     title: "Smart Home Automation",

@@ -3,10 +3,15 @@ import { Wifi, Shield, Home, Settings, Zap, Users } from "lucide-react"
 
 const services = [
   {
+    title: "Distributed WiFi Systems",
+    description: "Enterprise-grade WiFi solutions for large properties, barns, and outdoor areas. Ensure seamless connectivity across your entire estate.",
     icon: Wifi,
-    title: "Mesh WiFi Systems",
-    description: "Enterprise-grade mesh networking for large properties, barns, and outdoor areas. Ensure seamless connectivity across your entire estate.",
-    features: ["Multi-point coverage", "Outdoor APs", "Seamless roaming", "Band steering"]
+    features: [
+      "Coverage across large acreage",
+      "Outdoor and indoor connectivity",
+      "High-speed internet access",
+      "Professional installation and setup"
+    ]
   },
   {
     icon: Shield,

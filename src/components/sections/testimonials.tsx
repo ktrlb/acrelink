@@ -17,7 +17,7 @@ const testimonials = [
   {
     name: "Sarah & Mike Johnson",
     location: "150-acre ranch, Weatherford",
-    content: "AcreLink transformed our property with a mesh WiFi system that covers our entire ranch. We can now work from anywhere on our property with reliable internet.",
+    content: "AcreLink transformed our property with a distributed WiFi system that covers our entire ranch. We can now work from anywhere on our property with reliable internet.",
     rating: 5
   }
 ]

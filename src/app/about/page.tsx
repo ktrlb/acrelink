@@ -62,7 +62,7 @@ export default function About() {
                 <p>
                   Our team brings together expertise in networking, security, and home automation, 
                   combined with deep understanding of the unique challenges faced by rural property 
-                  owners. From mesh WiFi systems that cover entire ranches to security solutions 
+                  owners. From distributed WiFi systems that cover entire ranches to security solutions 
                   that work in remote locations, we&apos;ve developed specialized approaches for rural 
                   technology deployment.
                 </p>
