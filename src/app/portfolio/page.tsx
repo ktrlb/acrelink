@@ -1,77 +1,71 @@
 import { Layout } from "@/components/layout/layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Wifi, Shield, Home, MapPin, Calendar, Users } from "lucide-react"
+import { Wifi, Shield, Home, MapPin, Calendar, Users, Camera, Lock, Leaf, Thermometer } from "lucide-react"
 
 const projects = [
   {
-    title: "Weatherford Ranch WiFi Network",
-    location: "Weatherford, TX",
-    type: "Mesh WiFi System",
-    description: "Complete mesh WiFi coverage for a 150-acre ranch, including the main house, barn, and outdoor areas.",
-    features: ["Multi-point mesh network", "Outdoor access points", "Seamless roaming", "Remote monitoring"],
+    title: "Gate Access & Security Control",
+    type: "Security & Access Control",
+    description: "Advanced gate access system with AI license plate reading, cameras, and remote access control. Features both modern keypad entry and traditional garage door button options for convenience.",
+    features: ["AI license plate detection", "Remote camera access", "Keypad entry system", "Mobile app control", "Weather-resistant cameras", "24/7 monitoring"],
     image: "/api/placeholder/400/300",
     date: "2024",
-    size: "150 acres"
+    size: "Main entrance"
   },
   {
-    title: "Fort Worth Estate Security",
-    location: "Fort Worth, TX",
-    type: "Security Camera System",
-    description: "Comprehensive security solution for a luxury estate with 4K cameras and smart motion detection.",
-    features: ["4K security cameras", "Night vision", "Motion alerts", "Cloud storage"],
+    title: "Animal Monitoring System",
+    type: "Livestock Technology",
+    description: "Comprehensive monitoring for horse stalls and baby goat pens with remote temperature alerts and health monitoring. Peace of mind for livestock owners.",
+    features: ["Live stall monitoring", "Temperature alerts", "Health tracking", "Mobile notifications", "Night vision cameras", "Weather protection"],
     image: "/api/placeholder/400/300",
     date: "2024",
-    size: "25 acres"
+    size: "Multiple barns"
   },
   {
-    title: "Granbury Homestead Automation",
-    location: "Granbury, TX",
-    type: "Smart Home System",
-    description: "Full smart home automation including lighting, climate control, and security integration.",
-    features: ["Smart lighting", "Climate control", "Voice control", "Mobile app"],
+    title: "Property Security Cameras",
+    type: "Surveillance System",
+    description: "Strategic camera placement with smart alerts, including swimming pool monitoring and perimeter security. Custom alert system for different zones.",
+    features: ["Swimming pool monitoring", "Perimeter security", "Smart motion alerts", "Zone-based notifications", "Cloud storage", "Mobile access"],
     image: "/api/placeholder/400/300",
-    date: "2023",
-    size: "40 acres"
+    date: "2024",
+    size: "Full property coverage"
   },
   {
-    title: "Cleburne Farm Network",
-    location: "Cleburne, TX",
-    type: "Agricultural WiFi",
-    description: "Specialized WiFi network for agricultural operations with coverage across fields and outbuildings.",
-    features: ["Agricultural-grade equipment", "Field coverage", "Weather resistance", "Remote management"],
+    title: "Ranch Mesh Internet",
+    type: "Network Infrastructure",
+    description: "Enterprise-grade mesh WiFi system covering entire ranch properties, barns, and outdoor areas. Seamless connectivity across large acreage.",
+    features: ["Multi-point coverage", "Outdoor access points", "Seamless roaming", "Band steering", "Remote management", "High-speed connectivity"],
     image: "/api/placeholder/400/300",
-    date: "2023",
-    size: "200 acres"
+    date: "2024",
+    size: "Large acreage"
   },
   {
-    title: "Stephenville Ranch Integration",
-    location: "Stephenville, TX",
-    type: "System Integration",
-    description: "Complete integration of existing systems with new smart technology for unified control.",
-    features: ["Legacy system integration", "Custom dashboard", "API development", "Training program"],
+    title: "Smart Home Automation",
+    type: "Home Control System",
+    description: "Complete smart home setup with automated lighting, motorized blinds, and voice control. Create custom scenes and schedules for your lifestyle.",
+    features: ["Smart lighting control", "Motorized blinds", "Voice commands", "Custom scenes", "Mobile app control", "Energy efficiency"],
     image: "/api/placeholder/400/300",
-    date: "2023",
-    size: "300 acres"
+    date: "2024",
+    size: "Residential"
   },
   {
-    title: "Alvarado Estate Technology",
-    location: "Alvarado, TX",
-    type: "Comprehensive Solution",
-    description: "Full technology transformation including WiFi, security, automation, and entertainment systems.",
-    features: ["Complete system design", "Premium equipment", "Professional installation", "Ongoing support"],
+    title: "Smart Garden Planning",
+    type: "Agricultural Technology",
+    description: "Intelligent garden monitoring and automation with soil sensors, irrigation control, and climate monitoring for optimal plant health.",
+    features: ["Soil moisture sensors", "Automated irrigation", "Climate monitoring", "Plant health tracking", "Weather integration", "Mobile alerts"],
     image: "/api/placeholder/400/300",
-    date: "2023",
-    size: "75 acres"
+    date: "2024",
+    size: "Garden areas"
   }
 ]
 
 const categories = [
   { name: "All Projects", count: projects.length },
-  { name: "WiFi Networks", count: 2 },
-  { name: "Security Systems", count: 1 },
+  { name: "Security & Access", count: 2 },
+  { name: "Livestock Monitoring", count: 1 },
+  { name: "Network Infrastructure", count: 1 },
   { name: "Smart Home", count: 1 },
-  { name: "System Integration", count: 1 },
-  { name: "Comprehensive", count: 1 }
+  { name: "Agricultural Tech", count: 1 }
 ]
 
 export default function Portfolio() {
@@ -84,8 +78,8 @@ export default function Portfolio() {
               Our Portfolio
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Explore our recent projects and see how we've transformed properties across North Central Texas 
-              with smart technology solutions.
+              Explore our recent projects and see how we've transformed rural properties 
+              with smart technology solutions across North Central Texas.
             </p>
           </div>
 
@@ -108,11 +102,12 @@ export default function Portfolio() {
                 <div className="aspect-video bg-gradient-to-br from-blue-100 to-green-100 rounded-t-lg flex items-center justify-center">
                   <div className="text-center text-gray-500">
                     <div className="w-16 h-16 bg-white/50 rounded-full flex items-center justify-center mx-auto mb-2">
-                      {project.type.includes("WiFi") && <Wifi className="w-8 h-8 text-blue-600" />}
-                      {project.type.includes("Security") && <Shield className="w-8 h-8 text-green-600" />}
-                      {project.type.includes("Smart Home") && <Home className="w-8 h-8 text-purple-600" />}
-                      {project.type.includes("Integration") && <Users className="w-8 h-8 text-orange-600" />}
-                      {project.type.includes("Comprehensive") && <Wifi className="w-8 h-8 text-blue-600" />}
+                      {project.type.includes("Security") && <Shield className="w-8 h-8 text-blue-600" />}
+                      {project.type.includes("Livestock") && <Thermometer className="w-8 h-8 text-green-600" />}
+                      {project.type.includes("Surveillance") && <Camera className="w-8 h-8 text-purple-600" />}
+                      {project.type.includes("Network") && <Wifi className="w-8 h-8 text-orange-600" />}
+                      {project.type.includes("Smart Home") && <Home className="w-8 h-8 text-indigo-600" />}
+                      {project.type.includes("Agricultural") && <Leaf className="w-8 h-8 text-emerald-600" />}
                     </div>
                     <p className="text-sm">Project Image</p>
                   </div>
@@ -135,10 +130,6 @@ export default function Portfolio() {
                   <div className="flex items-center space-x-4 text-sm text-gray-600">
                     <div className="flex items-center space-x-1">
                       <MapPin className="w-4 h-4" />
-                      <span>{project.location}</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Users className="w-4 h-4" />
                       <span>{project.size}</span>
                     </div>
                   </div>
