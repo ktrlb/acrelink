@@ -79,8 +79,8 @@ export default function Contact() {
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               Get In Touch
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ready to transform your property with smart technology? Let's discuss your needs 
+                              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ready to transform your property with smart technology? Let&apos;s discuss your needs 
               and create a custom solution that fits your lifestyle.
             </p>
           </div>
@@ -91,7 +91,7 @@ export default function Contact() {
               <CardHeader>
                 <CardTitle className="text-2xl">Send us a message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you within 24 hours.
+                  Fill out the form below and we&apos;ll get back to you within 24 hours.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -172,7 +172,7 @@ export default function Contact() {
                       name="message"
                       value={formData.message}
                       onChange={handleInputChange}
-                      placeholder="Tell us about your property and what you'd like to achieve with smart technology..."
+                      placeholder="Tell us about your property and what you&apos;d like to achieve with smart technology..."
                       rows={4}
                       required
                     />
@@ -184,7 +184,7 @@ export default function Contact() {
                       <CheckCircle className="w-5 h-5" />
                       <span>
                         Message sent successfully! 
-                        {emailSent ? ' We\'ve sent you a confirmation email.' : ' We\'ll get back to you soon.'}
+                        {emailSent ? ' We&apos;ve sent you a confirmation email.' : ' We&apos;ll get back to you soon.'}
                       </span>
                     </div>
                   )}
@@ -275,7 +275,7 @@ export default function Contact() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-blue-800 mb-4">
-                    We offer free 15-30 minute phone consultations to discuss your property's specific needs 
+                    We offer free 15-30 minute phone consultations to discuss your property&apos;s specific needs 
                     and determine if an on-site visit is warranted. On-site consultations are available for 
                     qualified projects.
                   </p>

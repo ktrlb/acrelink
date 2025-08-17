@@ -1,5 +1,4 @@
 import { Layout } from "@/components/layout/layout"
-import { Services } from "@/components/sections/services"
 import { CTA } from "@/components/sections/cta"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle, Wifi, Shield, Home, Settings, Zap, Users } from "lucide-react"
@@ -137,7 +136,7 @@ export default function ServicesPage() {
               </h3>
               <p className="text-gray-600 mb-6">
                 Start with a free 15-30 minute phone consultation to discuss your needs. 
-                We'll determine if an on-site visit is warranted and provide a custom quote.
+                We&apos;ll determine if an on-site visit is warranted and provide a custom quote.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

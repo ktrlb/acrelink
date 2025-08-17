@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout/layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Users, Award, MapPin, Clock, Shield, Zap } from "lucide-react"
+import { Users, Zap, Award } from "lucide-react"
 
 const values = [
   {
@@ -43,7 +43,7 @@ export default function About() {
               About AcreLink
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're passionate about bringing smart technology to large properties and rural estates 
+              We&apos;re passionate about bringing smart technology to large properties and rural estates 
               across North Central Texas, helping property owners enjoy modern conveniences without 
               compromising the rural lifestyle they love.
             </p>
@@ -63,11 +63,11 @@ export default function About() {
                   Our team brings together expertise in networking, security, and home automation, 
                   combined with deep understanding of the unique challenges faced by rural property 
                   owners. From mesh WiFi systems that cover entire ranches to security solutions 
-                  that work in remote locations, we've developed specialized approaches for rural 
+                  that work in remote locations, we&apos;ve developed specialized approaches for rural 
                   technology deployment.
                 </p>
                 <p>
-                  Today, we're proud to serve property owners across North Central Texas, helping 
+                  Today, we&apos;re proud to serve property owners across North Central Texas, helping 
                   them enjoy the benefits of smart technology while preserving the rural lifestyle 
                   they cherish.
                 </p>
@@ -101,7 +101,7 @@ export default function About() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Ongoing Support</h3>
-                    <p className="text-gray-600">We don't just install systems - we provide ongoing support and maintenance.</p>
+                    <p className="text-gray-600">We don&apos;t just install systems - we provide ongoing support and maintenance.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">

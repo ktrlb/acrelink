@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout/layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Wifi, Shield, Home, MapPin, Calendar, Users, Camera, Lock, Leaf, Thermometer } from "lucide-react"
+import { Wifi, Shield, Home, Camera, Leaf, Thermometer, MapPin } from "lucide-react"
 
 const projects = [
   {
@@ -78,7 +78,7 @@ export default function Portfolio() {
               Our Portfolio
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Explore our recent projects and see how we've transformed rural properties 
+              Explore our recent projects and see how we&apos;ve transformed rural properties 
               with smart technology solutions across North Central Texas.
             </p>
           </div>

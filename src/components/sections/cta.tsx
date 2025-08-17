@@ -10,10 +10,10 @@ export function CTA() {
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Transform Your Property?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-            Start with a free 15-30 minute phone consultation to discuss your needs. 
-            We'll determine if an on-site visit is warranted and design a custom solution for your property.
-          </p>
+                  <p className="text-xl text-blue-100 mb-8 leading-relaxed">
+          Start with a free 15-30 minute phone consultation to discuss your needs.
+          We&apos;ll determine if an on-site visit is warranted and design a custom solution for your property.
+        </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6">

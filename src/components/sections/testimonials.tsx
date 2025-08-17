@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Karlie Bold",
     location: "Farm owner & office manager",
-    content: "Living on our farm with all this smart technology has been incredible! We have cameras on demand, AI person and license plate detection at our farm gate, and I can ask Siri about our swimming pool temperature. It's all these little luxuries that make rural living so much better.",
+              content: "Living on our farm with all this smart technology has been incredible! We have cameras on demand, AI person and license plate detection at our farm gate, and I can ask Siri about our swimming pool temperature. It&apos;s all these little luxuries that make rural living so much better.",
     rating: 5
   },
   {
@@ -49,7 +49,7 @@ export function Testimonials() {
                 <Quote className="w-8 h-8 text-blue-200 mb-4" />
                 
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  "{testimonial.content}"
+                  &ldquo;{testimonial.content}&rdquo;
                 </p>
                 
                 <div>
