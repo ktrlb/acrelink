@@ -233,7 +233,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Email</p>
-                      <p className="text-gray-600">info@acrelink.com</p>
+                      <p className="text-gray-600">info@acrelinkllc.com</p>
                     </div>
                   </div>
                   

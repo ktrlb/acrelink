@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-// Initialize Resend (will work with or without API key)
-const resend = new Resend(process.env.RESEND_API_KEY)
+// Initialize Resend only if API key is available
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
 
 export async function POST(request: NextRequest) {
   try {
@@ -39,11 +39,11 @@ export async function POST(request: NextRequest) {
 
     // Try to send email if Resend is configured
     let emailSent = false
-    if (process.env.RESEND_API_KEY) {
+    if (resend && process.env.RESEND_API_KEY) {
       try {
         await resend.emails.send({
-          from: 'AcreLink Contact Form <noreply@acrelink.com>',
-          to: ['info@acrelink.com'], // You can change this to your preferred email
+          from: 'AcreLink Contact Form <noreply@acrelinkllc.com>',
+          to: ['info@acrelinkllc.com'], // You can change this to your preferred email
           subject: `New Contact Form Submission from ${firstName} ${lastName}`,
           html: `
             <h2>New Contact Form Submission</h2>
@@ -68,10 +68,10 @@ export async function POST(request: NextRequest) {
     }
 
     // Send confirmation email to the user
-    if (process.env.RESEND_API_KEY && emailSent) {
+    if (resend && process.env.RESEND_API_KEY && emailSent) {
       try {
         await resend.emails.send({
-          from: 'AcreLink <noreply@acrelink.com>',
+          from: 'AcreLink <noreply@acrelinkllc.com>',
           to: [email],
           subject: 'Thank you for contacting AcreLink',
           html: `
