@@ -9,13 +9,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="relative w-8 h-8">
+            <div className="flex items-center space-x-4 mb-4">
+              <div className="relative w-60 h-60">
                 <Image
                   src="/acrelink logo.svg"
                   alt="AcreLink Logo"
-                  width={32}
-                  height={32}
+                  width={240}
+                  height={240}
                   className="w-full h-full object-contain"
                 />
               </div>

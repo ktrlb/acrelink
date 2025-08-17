@@ -20,51 +20,54 @@ export function Header() {
   return (
     <header className="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="relative w-10 h-10">
+        <div className="flex justify-between items-center h-24">
+          {/* Left side - Logo */}
+          <div className="flex items-center space-x-4">
+            <div className="relative w-20 h-20">
               <Image
                 src="/acrelink logo.svg"
                 alt="AcreLink Logo"
-                width={40}
-                height={40}
+                width={200}
+                height={200}
                 className="w-full h-full object-contain"
                 priority
               />
             </div>
             <span className="text-xl font-bold text-gray-900">AcreLink</span>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
-
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button asChild>
-              <Link href="/contact">Get Started</Link>
-            </Button>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </Button>
+          {/* Right side - Navigation & CTA */}
+          <div className="flex items-center space-x-8">
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex space-x-6">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-700 hover:text-blue-600 px-2 py-1 text-sm font-medium transition-colors"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+
+            {/* CTA Button */}
+            <div className="hidden md:block">
+              <Button asChild size="sm">
+                <Link href="/contact">Get Started</Link>
+              </Button>
+            </div>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              </Button>
+            </div>
           </div>
         </div>
 
