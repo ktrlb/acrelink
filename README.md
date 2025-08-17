@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AcreLink Website
+
+A professional website for AcreLink, a smart technology consulting and installation company specializing in large properties and rural estates across North Central Texas.
+
+## Features
+
+- **Responsive Design**: Mobile-first approach using Tailwind CSS
+- **Modern UI**: Built with Shadcn UI components and Radix UI primitives
+- **Performance Optimized**: Next.js App Router with React Server Components
+- **Professional Sections**: Hero, Services, Testimonials, and CTA sections
+- **Complete Pages**: Home, Services, About, Portfolio, and Contact pages
+
+## Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Components**: Shadcn UI + Radix UI
+- **Icons**: Lucide React
+- **Fonts**: Geist Sans & Geist Mono
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd acrelink-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── about/            # About page
+│   ├── contact/          # Contact page
+│   ├── portfolio/        # Portfolio page
+│   ├── services/         # Services page
+│   ├── globals.css       # Global styles
+│   ├── layout.tsx        # Root layout
+│   └── page.tsx          # Homepage
+├── components/            # React components
+│   ├── layout/           # Layout components (Header, Footer)
+│   ├── sections/         # Page sections (Hero, Services, etc.)
+│   └── ui/               # Shadcn UI components
+└── lib/                  # Utility functions
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Deploy on Vercel
+## Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Colors
+The website uses a blue and green color scheme that can be customized in the Tailwind config and component files.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Content
+Update the content in the component files to match your business needs:
+- `src/components/sections/hero.tsx` - Main hero section
+- `src/components/sections/services.tsx` - Services offered
+- `src/components/sections/testimonials.tsx` - Customer testimonials
+- `src/components/sections/cta.tsx` - Call to action section
+
+### Contact Information
+Update contact details in:
+- `src/components/layout/footer.tsx`
+- `src/app/contact/page.tsx`
+
+## Deployment
+
+The website can be deployed to:
+- **Vercel** (recommended for Next.js)
+- **Netlify**
+- **AWS Amplify**
+- Any platform supporting Node.js applications
+
+## License
+
+This project is private and proprietary to AcreLink.
+
+## Support
+
+For questions or support, contact the development team.
