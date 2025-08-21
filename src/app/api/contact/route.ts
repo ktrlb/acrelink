@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
     if (resend && process.env.RESEND_API_KEY) {
       try {
         await resend.emails.send({
-          from: 'AcreLink Contact Form <noreply@acrelinkllc.com>',
+          from: 'AcreLink Contact Form <onboarding@resend.dev>',
           to: ['info@acrelinkllc.com'], // You can change this to your preferred email
           subject: `New Contact Form Submission from ${firstName} ${lastName}`,
           html: `
@@ -71,7 +71,7 @@ export async function POST(request: NextRequest) {
     if (resend && process.env.RESEND_API_KEY && emailSent) {
       try {
         await resend.emails.send({
-          from: 'AcreLink <noreply@acrelinkllc.com>',
+          from: 'AcreLink <onboarding@resend.dev>',
           to: [email],
           subject: 'Thank you for contacting AcreLink',
           html: `
