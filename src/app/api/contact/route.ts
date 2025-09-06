@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Always log the submission
+    // Log the submission
     console.log('Contact Form Submission:', {
       firstName,
       lastName,
@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
       try {
         await resend.emails.send({
           from: 'AcreLink Contact Form <onboarding@resend.dev>',
-          to: ['info@acrelinkllc.com'], // You can change this to your preferred email
+          to: ['karlienraley@gmail.com'], // Using verified email address
           subject: `New Contact Form Submission from ${firstName} ${lastName}`,
           html: `
             <h2>New Contact Form Submission</h2>
@@ -65,30 +65,6 @@ export async function POST(request: NextRequest) {
       }
     } else {
       console.log('RESEND_API_KEY not configured - email not sent')
-    }
-
-    // Send confirmation email to the user
-    if (resend && process.env.RESEND_API_KEY && emailSent) {
-      try {
-        await resend.emails.send({
-          from: 'AcreLink <onboarding@resend.dev>',
-          to: [email],
-          subject: 'Thank you for contacting AcreLink',
-          html: `
-            <h2>Thank you for contacting AcreLink!</h2>
-            <p>Hi ${firstName},</p>
-            <p>We've received your message and will get back to you within 24 hours.</p>
-            <p><strong>Your message:</strong></p>
-            <p>${message.replace(/\n/g, '<br>')}</p>
-            <p>If you have any urgent questions, please don't hesitate to reach out.</p>
-            <p>Best regards,<br>The AcreLink Team</p>
-          `
-        })
-        console.log('Confirmation email sent to user')
-      } catch (confirmationError) {
-        console.error('Confirmation email error:', confirmationError)
-        // Don't fail the main submission for confirmation email issues
-      }
     }
 
     return NextResponse.json(

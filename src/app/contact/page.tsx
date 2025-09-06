@@ -279,8 +279,14 @@ export default function Contact() {
                     and determine if an on-site visit is warranted. On-site consultations are available for 
                     qualified projects.
                   </p>
-                  <Button variant="outline" className="w-full border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
-                    Schedule Phone Consultation
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                    asChild
+                  >
+                    <a href="mailto:info@acrelinkllc.com?subject=Phone Consultation Request&body=Hi, I would like to schedule a phone consultation to discuss my property's smart technology needs. Please let me know your availability.">
+                      Schedule Phone Consultation
+                    </a>
                   </Button>
                 </CardContent>
               </Card>

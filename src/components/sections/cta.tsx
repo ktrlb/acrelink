@@ -15,17 +15,11 @@ export function CTA() {
           We&apos;ll determine if an on-site visit is warranted and design a custom solution for your property.
         </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <div className="flex justify-center mb-8">
             <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6">
               <Link href="/contact">
                 <Phone className="mr-2 h-5 w-5" />
                 Schedule Consultation
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-blue-600">
-              <Link href="/contact">
-                <Mail className="mr-2 h-5 w-5" />
-                Get Quote
               </Link>
             </Button>
           </div>

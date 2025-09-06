@@ -13,6 +13,7 @@ export function Header() {
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
     { name: "Portfolio", href: "/portfolio" },
+    { name: "Blog", href: "/blog" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ]
@@ -51,12 +52,6 @@ export function Header() {
               ))}
             </nav>
 
-            {/* CTA Button */}
-            <div className="hidden md:block">
-              <Button asChild size="sm">
-                <Link href="/contact">Get Started</Link>
-              </Button>
-            </div>
 
             {/* Mobile menu button */}
             <div className="md:hidden">
@@ -85,11 +80,6 @@ export function Header() {
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-4">
-                <Button asChild className="w-full">
-                  <Link href="/contact">Get Started</Link>
-                </Button>
-              </div>
             </div>
           </div>
         )}
